@@ -127,10 +127,10 @@ Paste the following configuration:
 ```nginx
 server {
     listen 80;
-    server_name 34.228.170.42;
+    server_name <IP Address>;
 
     location / {
-        proxy_pass http://34.228.170.42:5000;
+        proxy_pass http://<IP Address>:5000;
         proxy_http_version 1.1;
         proxy_set_header Host $host;
         proxy_set_header X-Real-IP $remote_addr;
